@@ -1,6 +1,3 @@
-#pragma once
-
-#include <math>
 class Vector2
 {
     public:
