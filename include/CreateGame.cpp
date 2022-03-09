@@ -14,6 +14,6 @@ static void PaintGame(Vector2 Position, char Player, Vector2 WorldSize) {
                 }
             }
         }
-        std::cout << "" << endl;
+        std::cout << "" << std::endl;
     }
 }
