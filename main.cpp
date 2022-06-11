@@ -7,12 +7,15 @@ using namespace std;
 int main() {
 
 
-  Vector2 worldSize = Vector2(5, 5);
-  Vector2 position = Vector2(2, 2);
+	Vector2 worldSize(5, 5);
+	Vector2 position(2, 2);
 
-  char player = '#';
+  	char player = '#';
+	
+	
+  	PaintGame(position, player, worldSize);
+	
+	std::cout << "\n";
 
-  CreateGame::PaintGame(position, player, worldSize);
-
-  return 0;
+  	return 0;
 }

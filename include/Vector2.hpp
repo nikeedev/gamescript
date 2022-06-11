@@ -1,3 +1,4 @@
+#pragma once
 #ifdef VECTOR_EXPORTS
  #define CLASS_DECL __declspec(dllexport)
 #else
