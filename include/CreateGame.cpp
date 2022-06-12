@@ -3,19 +3,21 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
 
 void PaintGame(Vector2 Position, char Player, Vector2 WorldSize) {
+    cout << "Running Game..." << endl;
  	for (int j=0; j < WorldSize.y; j++) {
         	for (int i=0; i < WorldSize.x; i++) {
-            		std::cout << "  ";
+            		cout << "  ";
             		if (i == Position.x - 1) {
                 		if (j == Position.y) {
-                    			std::cout << Player + ' ';
+                    			cout << Player + ' ';
                     			i += 1;
                 		}
             		}
         	}
-     		std::cout << "" << std::endl;
+     		cout << "" << endl;
 	}
 }
 

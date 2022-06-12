@@ -1,8 +1,9 @@
 #pragma once
+#include "CreateGame.hpp"
+#include "Vector2.hpp"
 #include <iostream>
 #include <string>
-#include "Vector2.hpp"
 
 
-static void PaintGame(Vector2 Position, char Player, Vector2 WorldSize) {};
+void PaintGame(Vector2 Position, char Player, Vector2 WorldSize);
 
