@@ -18,5 +18,5 @@ public:
     y = a;
   }
 
-  ~Vector2();
+  //~Vector2();
 };

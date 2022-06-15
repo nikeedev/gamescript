@@ -1,27 +1,28 @@
-#include "CreateGame.h"
-#include "Vector2.h"
-#include "Size.h"
 #include <iostream>
 #include <string>
+#include "Vector2.hpp"
+#include "Size.hpp"
+#include "CreateGame.hpp"
 
+using namespace std;
 
-void PaintGame(Vector2* Position, char Player, Size* WorldSize)
+void PaintGame(Vector2 Position, char Player, Size WorldSize)
 {
-	std::cout << "Running Game..." << std::endl;
-	for (int j = 0; j < WorldSize->height; j++)
+	cout << "Running Game..." << endl;
+	for (int j = 0; j < WorldSize.height; j++)
 	{
-		for (int i = 0; i < WorldSize->width; i++)
+		for (int i = 0; i < WorldSize.width; i++)
 		{
-			std::cout << "  ";
-			if (i == Position->x - 1)
+			cout << "  ";
+			if (i == Position.x - 1)
 			{
-				if (j == Position->y)
+				if (j == Position.y)
 				{
-					std::cout << Player << ' ';
+					cout << Player << ' ';
 					i += 1;
 				}
 			}
 		}
-		std::cout << "" << std::endl;
+		cout << "" << endl;
 	}
 }

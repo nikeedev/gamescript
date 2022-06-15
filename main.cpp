@@ -1,7 +1,7 @@
 #include <iostream>
-#include "include/Vector2.h"
-#include "include/Size.h"
-#include "include/CreateGame.h"
+#include "include/Vector2.hpp"
+#include "include/Size.hpp"
+#include "include/CreateGame.hpp"
 
 
 using namespace std;
@@ -9,13 +9,13 @@ using namespace std;
 int main() {
 
 
-	Size* worldSize = new Size(5, 5);
-	Vector2* position = new Vector2(2, 2);
+	Size worldSize(5, 5);
+	Vector2 position(2, 2);
 
 
   	char player = '#';
 
-  	PaintGame(position, player, worldSize);
+	PaintGame(position, player, worldSize);
 
 	cout << "\nGame Finished";
 

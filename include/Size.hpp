@@ -18,5 +18,5 @@ public:
     height = a;
   }
 
-  ~Size();
+  //~Size();
 };
