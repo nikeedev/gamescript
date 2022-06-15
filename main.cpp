@@ -14,10 +14,9 @@ int main() {
 
 
   	char player = '#';
-	
-	
+
   	PaintGame(position, player, worldSize);
-	
+
 	cout << "\nGame Finished";
 
 	cin.get();

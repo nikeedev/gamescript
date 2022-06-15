@@ -1,15 +1,22 @@
 #pragma once
 
-
 class Size
 {
 public:
   int width;
   int height;
 
-  Size();
-  
-  Size(int, int);
-  
+  Size()
+  {
+    width = 0;
+    height = 0;
+  }
+
+  Size(int a, int b)
+  {
+    width = b;
+    height = a;
+  }
+
   ~Size();
 };

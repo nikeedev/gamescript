@@ -4,6 +4,4 @@
 #include <iostream>
 #include <string>
 
-
 void PaintGame(Vector2*, char, Size*);
-
