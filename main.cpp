@@ -1,6 +1,7 @@
 #include <iostream>
-#include "include/Vector2.hpp"
-#include "include/CreateGame.hpp"
+#include "include/Vector2.h"
+#include "include/Size.h"
+#include "include/CreateGame.h"
 
 
 using namespace std;
@@ -8,8 +9,8 @@ using namespace std;
 int main() {
 
 
-	Vector2 worldSize(5, 5);
-	Vector2 position(2, 2);
+	Size* worldSize = new Size(5, 5);
+	Vector2* position = new Vector2(2, 2);
 
 
   	char player = '#';
