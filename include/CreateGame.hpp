@@ -1,9 +1,7 @@
 #pragma once
-#include <iostream>
-#include <string>
 #include "Vector2.hpp"
 #include "Size.hpp"
+#include <iostream>
+#include <string>
 
-using namespace std;
-
-void PaintGame(Vector2 Position, char Player, Size WorldSize);
+void PaintGame(Vector2* Position, char Player, Size* WorldSize);

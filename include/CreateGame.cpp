@@ -1,8 +1,8 @@
-#include <iostream>
-#include <string>
+#include "CreateGame.hpp"
 #include "Vector2.hpp"
 #include "Size.hpp"
-#include "CreateGame.hpp"
+#include <iostream>
+#include <string>
 
 using namespace std;
 
