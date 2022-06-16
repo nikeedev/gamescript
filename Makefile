@@ -1,3 +1,3 @@
 default:
-	rm main
-	g++ main.cpp -o main 
+  #g++ include/CreateGame.cpp
+	g++ main.cpp include/CreateGame.cpp -o game
