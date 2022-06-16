@@ -12,7 +12,7 @@ void PaintGame(Vector2 Position, char Player, Vector2 WorldSize) {
             		cout << "  ";
             		if (i == Position.x - 1) {
                 		if (j == Position.y) {
-                    			cout << Player + ' ';
+                    			cout << Player << ' ';
                     			i += 1;
                 		}
             		}
