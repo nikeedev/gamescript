@@ -1,3 +1,2 @@
 default:
-  #g++ include/CreateGame.cpp
-	g++ main.cpp include/CreateGame.cpp -o game
+	g++ main.cpp include/CreateGame.cpp include/Size.cpp include/Vector2.cpp -o game

@@ -1,6 +1,6 @@
 #pragma once
-#include "Vector2.hpp"
-#include "Size.hpp"
+#include "Vector2.h"
+#include "Size.h"
 #include <iostream>
 #include <string>
 
