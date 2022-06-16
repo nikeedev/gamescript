@@ -1,7 +1,7 @@
 #include <iostream>
-#include "include/Vector2.h"
-#include "include/Size.h"
-#include "include/CreateGame.h"
+#include "include/Vector2.hpp"
+#include "include/Size.hpp"
+#include "include/CreateGame.hpp"
 
 
 using namespace std;

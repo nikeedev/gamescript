@@ -1,6 +1,6 @@
-#include "CreateGame.h"
-#include "Vector2.h"
-#include "Size.h"
+#include "CreateGame.hpp"
+#include "Vector2.hpp"
+#include "Size.hpp"
 #include <iostream>
 #include <string>
 
