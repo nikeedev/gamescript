@@ -4,4 +4,4 @@
 #include <iostream>
 #include <string>
 
-void PaintGame(Vector2* Position, char Player, Size* WorldSize);
+void PaintGame(Vector2* Position, char* Player, Size* WorldSize);

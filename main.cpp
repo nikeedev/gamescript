@@ -1,25 +1,55 @@
 #include <iostream>
-#include "include/Vector2.h"
-#include "include/Size.h"
-#include "include/CreateGame.h"
+#include "Vector2.h"
+#include "Size.h"
+#include "CreateGame.h"
+#include "Log.h"
+#include "Input.h"
+#include <stdlib.h>
 
 
-using namespace std;
+
 
 int main() {
 
+	Log logger;
+	Size* worldSize = new Size(10, 10);
+	Vector2* position = new Vector2(4, 4);
+	bool running = true;
+	std::string key;
 
-	Size* worldSize = new Size(5, 5);
-	Vector2* position = new Vector2(2, 2);
+	char* player = "#";
+	
+	while (running) {
+		system("CLS");
 
+		PaintGame(position, player, worldSize);
 
-  	char player = '#';
+		std::cout << "\n";
+		key = Input::GetKey("Write up/u / down/d / left/l / right/r or exit to exit :) : ");
+		
+		if (key == "up" && key == "u")
+			position->y--;
 
-	PaintGame(position, player, worldSize);
+		else if (key == "down" && key == "d")
+			position->y++;
+		
+		else if (key == "right" && key == "r")
+			position->x++;
 
-	cout << "\nGame Finished";
+		else if (key == "left" && key == "l")
+			position->x--;
 
-	cin.get();
+		else if (key == "exit")
+			running = false;
 
-  	return 0;
+		else
+			continue;
+		
+	}
+
+	logger.LogInfo("\nGame Finished");
+
+	std::cin.get();
+
+	return 0;
 }
