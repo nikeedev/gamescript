@@ -1,2 +1,2 @@
-default:
-	g++ main.cpp include/CreateGame.cpp include/Size.cpp include/Vector2.cpp -o game
+all:
+	g++ main.cpp CreateGame.cpp Size.cpp Vector2.cpp Input.cpp Log.cpp -o game

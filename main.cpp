@@ -12,8 +12,8 @@
 int main() {
 
 	Log logger;
-	Size* worldSize = new Size(10, 10);
-	Vector2* position = new Vector2(4, 4);
+	Size worldSize(10, 10);
+	Vector2 position(4, 4);
 	bool running = true;
 	std::string key;
 
@@ -24,26 +24,30 @@ int main() {
 
 		PaintGame(position, player, worldSize);
 
+		std::cout << "\n"; 
+		std::cout << "X: " << position.x << ", Y: " << position.y << std::endl;
 		std::cout << "\n";
-		key = Input::GetKey("Write up/u / down/d / left/l / right/r or exit to exit :) : ");
+
+		key = GetKey("Write up/u / down/d / left/l / right/r or exit to exit :) : ");
 		
-		if (key == "up" && key == "u")
-			position->y--;
+		if (key == "up" || key == "u")
+			position.y--;
 
-		else if (key == "down" && key == "d")
-			position->y++;
+		else if (key == "down" || key == "d")
+			position.y++;
 		
-		else if (key == "right" && key == "r")
-			position->x++;
+		else if (key == "right" || key == "r")
+			position.x++;
 
-		else if (key == "left" && key == "l")
-			position->x--;
+		else if (key == "left" || key == "l")
+			position.x--;
 
-		else if (key == "exit")
+		else if (key == "exit" || key == "e")
 			running = false;
 
 		else
 			continue;
+		
 		
 	}
 

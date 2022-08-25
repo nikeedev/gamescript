@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
+#include <string>
 
-namespace Input {
-	std::string GetKey(std::string info);
-}
+std::string GetKey(std::string info);
