@@ -100,20 +100,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CreateGame.cpp" />
-    <ClCompile Include="Input.cpp" />
-    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="include/CreateGame.cpp" />
+    <ClCompile Include="include/Input.cpp" />
+    <ClCompile Include="include/Log.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Size.cpp" />
-    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="include/Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CreateGame.h" />
-    <ClInclude Include="Input.h" />
-    <ClInclude Include="Log.h" />
+    <ClInclude Include="include/CreateGame.h" />
+    <ClInclude Include="include/Input.h" />
+    <ClInclude Include="include/Log.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Size.h" />
-    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="include/Vector2.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Icon.rc" />

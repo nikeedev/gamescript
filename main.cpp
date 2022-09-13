@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Vector2.h"
-#include "Size.h"
 #include "CreateGame.h"
 #include "Log.h"
 #include "Input.h"
@@ -9,18 +8,19 @@
 
 
 
-int main() {
+int main()
+{
 
 	Log logger;
-	Size worldSize(10, 10);
-	Vector2 position(4, 4);
+	Vector2 worldSize(10, 10);
+	Vector2 position(5, 5);
 	bool running = true;
 	std::string key;
 
 	char* player = "#";
 	
 	while (running) {
-		system("CLS");
+		system("cls");
 
 		PaintGame(position, player, worldSize);
 
@@ -29,20 +29,36 @@ int main() {
 		std::cout << "\n";
 
 		key = GetKey("Write up/u / down/d / left/l / right/r or exit to exit :) : ");
-		
-		if (key == "up" || key == "u")
-			position.y--;
 
-		else if (key == "down" || key == "d")
-			position.y++;
-		
-		else if (key == "right" || key == "r")
-			position.x++;
+		if (!position.y <= 0)	
+			if (key == "up" || key == "u")
+				position.y -= 1;
+		else
+			position.y += 1;
 
-		else if (key == "left" || key == "l")
-			position.x--;
 
-		else if (key == "exit" || key == "e")
+		if (!position.y >= worldSize.y)
+			if (key == "down" || key == "d")
+				position.y += 1;
+		else
+			position.y -= 1;
+
+
+
+		if (!position.x >= worldSize.x)
+			if (key == "right" || key == "r")
+				position.x += 1;	
+		else
+			position.x -= 1;
+
+
+		if (!position.x <= 0)
+			if (key == "left" || key == "l")
+				position.x -= 1;
+		else
+			position.x += 1;
+
+		if (key == "exit" || key == "e")
 			running = false;
 
 		else

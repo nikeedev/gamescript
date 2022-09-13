@@ -1,2 +1,5 @@
+
+src_files := main.cpp include/CreateGame.cpp include/Vector2.cpp include/Input.cpp include/Log.cpp
+
 all:
-	g++ main.cpp CreateGame.cpp Size.cpp Vector2.cpp Input.cpp Log.cpp -o game
+	g++ -Iinclude $(src_files) -o game
