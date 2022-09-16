@@ -1,5 +1,5 @@
 
-src_files := main.cpp include/CreateGame.cpp include/Vector2.cpp include/Input.cpp include/Log.cpp
+src_files := main.cpp src/CreateGame.cpp src/Vector2.cpp src/Input.cpp src/Log.cpp
 
 all:
-	g++ -Iinclude $(src_files) -o game
+	g++ -Isrc $(src_files) -o build/game

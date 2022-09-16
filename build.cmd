@@ -1,2 +1,2 @@
 mingw32-make
-./build/game
+build/game

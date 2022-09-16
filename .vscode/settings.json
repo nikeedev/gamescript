@@ -1,7 +1,6 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
-        "*.gameengine-obj": "jsonc",
         "string": "cpp"
     }
 }

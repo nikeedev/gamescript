@@ -53,13 +53,11 @@ int main()
 		if (key == "right" || key == "r" || key == "d")
 			position.x += 1;	
 
-
 		if (key == "exit" || key == "e")
 			running = false;
 
 		else
 			continue;
-
 		
 	}
 
