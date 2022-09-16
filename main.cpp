@@ -6,14 +6,12 @@
 #include <stdlib.h>
 
 
-
-
 int main()
 {
 
 	Log logger;
-	Vector2 worldSize(10, 10);
-	Vector2 position(5, 5);
+	Vector2 worldSize(20, 20);
+	Vector2 position(10, 10);
 	bool running = true;
 	std::string key;
 
@@ -21,6 +19,18 @@ int main()
 	
 	while (running) {
 		system("cls");
+
+		if (position.y <= -1)
+			position.y += 1;
+
+		if (position.y >= worldSize.y)
+			position.y -= 1;
+
+		if (position.x >= worldSize.x)
+			position.x -= 1;
+
+		if (position.x <= -1)
+			position.x += 1;
 
 		PaintGame(position, player, worldSize);
 
@@ -30,40 +40,26 @@ int main()
 
 		key = GetKey("Write up/u / down/d / left/l / right/r or exit to exit :) : ");
 
-		if (!position.y <= 0)	
-			if (key == "up" || key == "u")
-				position.y -= 1;
-		else
-			position.y += 1;
 
-
-		if (!position.y >= worldSize.y)
-			if (key == "down" || key == "d")
-				position.y += 1;
-		else
+		if (key == "up" || key == "u" || key == "w")
 			position.y -= 1;
 
-
-
-		if (!position.x >= worldSize.x)
-			if (key == "right" || key == "r")
-				position.x += 1;	
-		else
+		if (key == "down" || key == "d" || key == "s")
+			position.y += 1;
+		
+		if (key == "left" || key == "l" || key == "a")
 			position.x -= 1;
+		
+		if (key == "right" || key == "r" || key == "d")
+			position.x += 1;	
 
-
-		if (!position.x <= 0)
-			if (key == "left" || key == "l")
-				position.x -= 1;
-		else
-			position.x += 1;
 
 		if (key == "exit" || key == "e")
 			running = false;
 
 		else
 			continue;
-		
+
 		
 	}
 
