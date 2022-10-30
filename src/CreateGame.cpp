@@ -4,7 +4,7 @@
 
 Log logger;
 
-void PaintGame(Vector2 Position, char* Player, Vector2 WorldSize)
+void PaintGame(Vector2 Position, const char* Player, Vector2 WorldSize)
 {
 	std::cout << "Running Game..." << std::endl;
 	std::cout << " ";
