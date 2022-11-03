@@ -38,22 +38,22 @@ int main()
 		std::cout << "X: " << position.x << ", Y: " << position.y << std::endl;
 		std::cout << "\n";
 
-		key = GetKey("Write up/u / down/d / left/l / right/r or exit to exit :) : ");
+		key = GetKey("Write up / w | down / s | left / a | right / d or exit or e to exit: ");
 
 
-		if (key == "up" || key == "u" || key == "w")
+		else if (key == "up" || key == "u" || key == "w")
 			position.y -= 1;
 
-		if (key == "down" || key == "d" || key == "s")
+		else if (key == "down" || key == "d" || key == "s")
 			position.y += 1;
 		
-		if (key == "left" || key == "l" || key == "a")
+		else if (key == "left" || key == "l" || key == "a")
 			position.x -= 1;
 		
-		if (key == "right" || key == "r" || key == "d")
+		else if (key == "right" || key == "r" || key == "d")
 			position.x += 1;	
 
-		if (key == "exit" || key == "e")
+		else if (key == "exit" || key == "e")
 			running = false;
 
 		else

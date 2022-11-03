@@ -2,5 +2,6 @@
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
         "string": "cpp"
-    }
+    },
+    "makefile.makePath": "mingw32-make"
 }

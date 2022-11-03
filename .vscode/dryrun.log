@@ -1,4 +1,5 @@
-make.exe --dry-run --always-make --keep-going --print-directory
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
-
+mingw32-make.exe --dry-run --keep-going --print-directory
+mingw32-make: Entering directory 'c:/Users/nikgon07/OneDrive - Tysv�r kommune/Desktop/MyCode/cpp/gamescript'
+clang++ -std=c++20 src/main.cpp src/CreateGame.cpp src/Vector2.cpp src/Input.cpp src/Log.cpp -o build/mingw/game
+mingw32-make: Leaving directory 'c:/Users/nikgon07/OneDrive - Tysv�r kommune/Desktop/MyCode/cpp/gamescript'
+ 
