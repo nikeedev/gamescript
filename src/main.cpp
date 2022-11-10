@@ -41,7 +41,7 @@ int main()
 		key = GetKey("Write up / w | down / s | left / a | right / d or exit or e to exit: ");
 
 
-		else if (key == "up" || key == "u" || key == "w")
+		if (key == "up" || key == "u" || key == "w")
 			position.y -= 1;
 
 		else if (key == "down" || key == "d" || key == "s")
