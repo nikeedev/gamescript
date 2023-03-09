@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
 
-template <typename T>
-void Log(T message);
+#define Log(x) std::cout << x << std::endl;
 
