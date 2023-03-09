@@ -2,11 +2,10 @@
 #include <iostream>
 #include "Log.h"
 
-Log logger;
 
 void PaintGame(Vector2 Position, const char* Player, Vector2 WorldSize)
 {
-	std::cout << "Running Game..." << std::endl;
+	Log("Running Game...");
 	std::cout << " ";
 	for (int k = 0; k < WorldSize.x; k++) {
 		std::cout << "___";

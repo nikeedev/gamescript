@@ -1,2 +1,5 @@
 mingw32-make
-./build/mingw/game
+if ($LastExitCode -eq 0)
+{
+    ./build/mingw/game
+}

@@ -9,8 +9,7 @@
 int main()
 {
 
-	Log logger;
-	Vector2 worldSize(20, 20);
+	Vector2 worldSize(30, 30);
 	Vector2 position(10, 10);
 	bool running = true;
 	std::string key;
@@ -61,7 +60,7 @@ int main()
 		
 	}
 
-	logger.LogInfo("\nGame Finished");
+	Log("\nGame Finished");
 
 	std::cin.get();
 
